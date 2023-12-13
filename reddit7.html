@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Blog Reddit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .blog-section {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mon Blog Reddit</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('partie1')">Partie 1</a>
+        <a href="#" onclick="showSection('partie2')">Partie 2</a>
+        <a href="#" onclick="showSection('partie3')">Partie 3</a>
+    </nav>
+
+    <div id="partie1" class="blog-section active">
+        <h2>Reddit en tant que Réseau Social</h2>
+        <p>Reddit, créé en 2005, est un réseau social dynamique qui offre une plateforme diversifiée aux utilisateurs. Son concept central permet aux utilisateurs de partager une variété de contenus, tels que des textes, des liens, des images et des vidéos. L'interaction se fait principalement à travers des commentaires et des votes, permettant aux utilisateurs d'exprimer leur approbation ou leur désapprobation à l'égard du contenu partagé.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjDBIvDWNCrPVAOx9wLDlxZbUApp1ii4jmQ&usqp=CAU" alt="Image 1">
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.redd.it%2Fidk4xqlkq7g01.jpg&tbnid=ksyXchGGS9de7M&vet=12ahUKEwiM1JekpY2DAxUvZaQEHQPbCsEQMygEegQIARBe..i&imgrefurl=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2F7xjnga%2Fwhen_reddit_wont_show_you_how_many_upvotes_a_post%2F&docid=nt5cUCA_QESj9M&w=422&h=233&q=reddit%20vote&ved=2ahUKEwiM1JekpY2DAxUvZaQEHQPbCsEQMygEegQIARBe" alt="Image 2">
+    </div>
+
+    <div id="partie2" class="blog-section">
+        <h2>Utilisateurs de Reddit</h2>
+        <p>Les utilisateurs de Reddit forment une communauté diversifiée, incluant des individus âgés de 13 ans et plus, des entreprises, des organisations, des associations, des groupes de discussion, et des communautés virtuelles. Les fondateurs, Steve Huffman, Alexis Ohanian et Aaron Swartz, ont créé un espace où la diversité d'opinions et d'expériences est encouragée.</p>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2021/08/getty-reddit-icon-800x533.jpg" alt="Image 3">
+        <img src="http://cdn.statcdn.com/Infographic/images/normal/11860.jpeg" alt="Image 4">
+    </div>
+
+    <div id="partie3" class="blog-section">
+        <h2>Le Modèle Économique de Reddit</h2>
+        <p>Reddit a élaboré un modèle économique solide reposant sur deux sources de revenus principales : la publicité et les primes d'abonnement premium. Les primes offrent des fonctionnalités exclusives aux utilisateurs payants, améliorant ainsi leur expérience sur la plateforme.
+
+En plus de ces sources de revenus principales, Reddit explore des moyens de diversifier ses flux financiers. Cela inclut des options publicitaires ciblées pour les annonceurs cherchant à atteindre des audiences spécifiques. De plus, des collaborations stratégiques avec des marques et des entreprises contribuent à renforcer la stabilité financière de Reddit, élargissant ainsi ses horizons au-delà des revenus traditionnels liés à la publicité et aux abonnements. Cette approche diversifiée garantit la viabilité à long terme de la plateforme tout en continuant à offrir une expérience enrichissante à sa communauté mondiale d'utilisateurs.</p>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5RI7d1_8DUzbNapgNC7UGavFf__eGnk9qwSTpDcnsTjQJ8swue1gpt-sJrhFuD-eNcI5VpH_TmygRmSk1E5JOVnJFN75ZcmXJkSI797wBgy2hFvhrzqdcWLZicte7G4mbauU5gyCS4unpNVMfip7iY6DWhDmxV8npqCQe9BrnUuiC6L5uLOSQJx45KA/s3408/1.png" alt="Image 5">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.brandwatch.com%2Femail%2Fbrandwatch-bulletin-0105-reddit-personal-finance%2F&psig=AOvVaw0DqkFjand6EnbpSjg1jOUG&ust=1702587268940000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKDOzoumjYMDFQAAAAAdAAAAABBH" alt="Image 6">
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.blog-section');
+            sections.forEach(function (section) {
+                section.classList.remove('active');
+            });
+
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
